@@ -24,7 +24,7 @@ public class complexJsonParse {
 		 * 6. Verify if Sum of all Course prices matches with Purchase Amount
 		 * 
 		 */
-       
+        
 		JsonPath js = new JsonPath(payload.coursePrice());
 		
 		//1. Print No of courses returned by API
@@ -67,6 +67,9 @@ public class complexJsonParse {
 		}
 		
 		//6. Verify if Sum of all Course prices matches with Purchase Amount
+		
+		//  Total sum = Copies * price
+		// Total sum  = Purchase amount
 		int totalSum = 0;
 		for(int i=0;i<count;i++) {
 			int courseCopy = js.getInt("courses["+i+"].copies");
@@ -75,6 +78,7 @@ public class complexJsonParse {
 		}
 		System.out.println(totalSum);
 		
+		//Using Assertion to verify/validate the ER and AR
 		Assert.assertEquals(amt, totalSum);
 
 	}
