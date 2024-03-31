@@ -50,7 +50,7 @@ public class oAuthTest {
 		//POJO - Plain Old Java Object
 		GetCourse gc = given().queryParams("access_token",access_token_gen)
 		.when().log().all()
-		.get("/oauthapi/getCourseDetails").as(GetCourse.class);
+		.get("/oauthapi/getCourseDetails").as(GetCourse.class); // Providing POJO Class as Argument for Deserialization
 		
 		//accessing the  needed attribute value from response by creating object of respective java class
 	    
