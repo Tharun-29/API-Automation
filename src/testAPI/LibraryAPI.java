@@ -24,7 +24,7 @@ public class LibraryAPI {
 				.body(payload.addBooks(isbn,aisle)).when().post("/Library/Addbook.php").then().assertThat()
 				.statusCode(200).extract().response().asString();
 
-		// Used reuse method from payload by providing API response fetched from
+		// Used reuse method from payload class by providing API response fetched from
 		// previous line as parameter to the method
 		JsonPath reuse = reusableJSMethod.reuse(response);
 		String ID = reuse.get("ID");
