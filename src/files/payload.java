@@ -29,5 +29,38 @@ public class payload {
 		
 		return payload;
 	}
+	
+	
+	public static String addContact() {
+		return "{\r\n"
+				+ "    \"firstName\": \"John\",\r\n"
+				+ "    \"lastName\": \"fdsfsd\",\r\n"
+				+ "    \"birthdate\": \"1975-01-01\",\r\n"
+				+ "    \"email\": \"jdfdsdsfe@fake.com\",\r\n"
+				+ "    \"phone\": \"8025555455\",\r\n"
+				+ "    \"street1\": \"1 Main St.\",\r\n"
+				+ "    \"street2\": \"Apartment A\",\r\n"
+				+ "    \"city\": \"Anytown\",\r\n"
+				+ "    \"stateProvince\": \"KS\",\r\n"
+				+ "    \"postalCode\": \"126545\",\r\n"
+				+ "    \"country\": \"USA\"\r\n"
+				+ "}";
+	}
+	
+	public static String updateContacts() {
+		return "{\r\n"
+				+ "    \"firstName\": \"John\",\r\n"
+				+ "    \"lastName\": \"fdsfsd\",\r\n"
+				+ "    \"birthdate\": \"1975-01-01\",\r\n"
+				+ "    \"email\": \"jdfdsdsfe@fake.com\",\r\n"
+				+ "    \"phone\": \"7053452343\",\r\n"
+				+ "    \"street1\": \"1 Main St.\",\r\n"
+				+ "    \"street2\": \"Apartment A\",\r\n"
+				+ "    \"city\": \"Anytown\",\r\n"
+				+ "    \"stateProvince\": \"KS\",\r\n"
+				+ "    \"postalCode\": \"126545\",\r\n"
+				+ "    \"country\": \"USA\"\r\n"
+				+ "}";
+	}
 
 }
