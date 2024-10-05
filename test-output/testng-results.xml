@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-20T18:58:53 IST" name="Default suite" finished-at="2024-01-20T18:58:56 IST" duration-ms="3542">
+  <suite started-at="2024-09-24T23:50:04 IST" name="Default suite" finished-at="2024-09-24T23:50:07 IST" duration-ms="3949">
     <groups>
     </groups>
-    <test started-at="2024-01-20T18:58:53 IST" name="Default test" finished-at="2024-01-20T18:58:56 IST" duration-ms="3542">
-      <class name="testAPI.apiPayloadInputUsingPath">
-        <test-method signature="TestRunAPI()[pri:0, instance:testAPI.apiPayloadInputUsingPath@6cd28fa7]" started-at="2024-01-20T18:58:53 IST" name="TestRunAPI" finished-at="2024-01-20T18:58:56 IST" duration-ms="3495" status="PASS">
+    <test started-at="2024-09-24T23:50:04 IST" name="Default test" finished-at="2024-09-24T23:50:07 IST" duration-ms="3949">
+      <class name="RestFull_Booker.CreateAuth">
+        <test-method signature="createAuthToken()[pri:0, instance:RestFull_Booker.CreateAuth@27462a88]" started-at="2024-09-24T23:50:04 IST" name="createAuthToken" finished-at="2024-09-24T23:50:07 IST" duration-ms="3893" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestRunAPI -->
-      </class> <!-- testAPI.apiPayloadInputUsingPath -->
+        </test-method> <!-- createAuthToken -->
+      </class> <!-- RestFull_Booker.CreateAuth -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

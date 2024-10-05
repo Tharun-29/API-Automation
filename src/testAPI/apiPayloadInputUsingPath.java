@@ -40,5 +40,10 @@ public class apiPayloadInputUsingPath {
 			given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
 					.body(apiPath).when().post("/maps/api/place/add/json").then().log().all().assertThat()
 					.statusCode(200).body("scope", equalTo("APP")).header("server", "Apache/2.4.52 (Ubuntu)");
+			
+			given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
+			.body(apiPath).when().post("/maps/api/place/add/json").then().rootPath(apiPath)
+			.body("language", hasItem("French-IN"));
+			
            }
 }

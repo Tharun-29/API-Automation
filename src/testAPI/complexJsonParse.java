@@ -24,7 +24,7 @@ public class complexJsonParse {
 		 * 6. Verify if Sum of all Course prices matches with Purchase Amount
 		 * 
 		 */
-        
+		
 		JsonPath js = new JsonPath(payload.coursePrice());
 		
 		//1. Print No of courses returned by API
